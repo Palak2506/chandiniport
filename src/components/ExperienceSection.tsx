@@ -5,27 +5,16 @@ import { Calendar, MapPin } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Data Analyst",
-      company: "Delta India",
-      location: "Pune, India",
-      dates: "Jan 2024 – May 2025",
+      title: "React Developer",
+      company: "Tata Consultancy Services (TCS)",
+      location: "Dublin, Ireland",
+      dates: "Dec 2021 – March 2024",
       responsibilities: [
-        "Identified sales gaps across 500K+ records, driving corrective actions that boosted quarterly sales by 60%.",
-        "Unified POS, CRM, and marketing data via SQL/Excel, improving data reliability by 90% and enabling €150K cost savings.",
-        "Built Python time-series model revealing intent patterns, increasing conversions by 18% and optimizing budget allocation.",
-        "Delivered Power BI insights that cut low-ROI spend by 25% and accelerated data-driven decisions across regions."
-      ]
-    },
-    {
-      title: "Data Analyst",
-      company: "Tibco Software",
-      location: "Pune, India",
-      dates: "March 2021 – Aug 2022",
-      responsibilities: [
-        "Improved sales forecasting accuracy by 20% using SQL, Excel, and automated ETL pipelines on 5M+ records.",
-        "Built Power BI dashboards with real-time insights across 12 units and 50+ KPIs, speeding decisions by 30%.",
-        "Reduced stockouts by 15% by defining requirements and building predictive models for inventory planning.",
-        "Improved new-product forecasting by 20% using A/B testing and statistical modeling across 10+ market segments."
+        "Developed scalable and reusable UI components using React, TypeScript, HTML5, and CSS, improving maintainability across enterprise dashboards.",
+        "Worked on the Nutanix Prism DaaS project, building responsive interfaces and integrating REST APIs to manage virtual desktop infrastructure and system monitoring.",
+        "Implemented Redux-based state management and component architecture, ensuring predictable data flow and improved application stability.",
+        "Improved application performance by implementing lazy loading, code splitting, and modular architecture, reducing page load time by 35%.",
+        "Collaborated with backend teams in Agile environments, contributing to CI/CD pipelines and automated testing.",
       ]
     }
   ];

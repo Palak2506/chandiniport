@@ -4,29 +4,42 @@ import { Badge } from "@/components/ui/badge";
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Programming & Data Analysis",
-      skills: ["Python", "R programming", "Pandas", "Numpy", "SQL", "MySQL"]
+      title: "Front-End Technologies",
+      skills: [
+        "Angular",
+        "React.js",
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3",
+        "Sass",
+        "Responsive Web Design",
+      ],
     },
     {
-      title: "Data Visualization & BI Tools", 
-      skills: ["Power BI", "Tableau", "Data Visualization", "DAX query", "Analytical skills"]
+      title: "Frameworks & Libraries",
+      skills: ["Redux", "RxJS", "React Router", "Bootstrap", "Tailwind CSS"],
     },
     {
-      title: "Cloud & Data Platforms",
-      skills: ["AWS", "GCP", "Databricks", "ETL", "Data Warehousing"]
+      title: "UI / UX Development",
+      skills: ["Reusable UI Components", "Cross-Browser Compatibility", "Accessibility (WCAG)", "Semantic HTML"],
     },
     {
-      title: "Machine Learning & AI",
-      skills: ["LLM", "RAG", "Matplotlib", "Scikit-learn", "TensorFlow", "XGBoost", "CatBoost", "LightGBM"]
+      title: "API Integration",
+      skills: ["REST APIs", "GraphQL", "Axios", "JSON"],
     },
     {
-      title: "Business Tools & Frameworks",
-      skills: ["Microsoft Excel", "Microsoft Word", "KPI frameworks", "Jira", "Confluence", "Stakeholder management"]
+      title: "Testing",
+      skills: ["Jest", "React Testing Library", "Cypress"],
     },
     {
-      title: "Professional Skills",
-      skills: ["Presentation skills", "Problem-solving", "Data-driven decision making", "Automation"]
-    }
+      title: "DevOps & Tools",
+      skills: ["Git", "GitHub", "CircleCI", "CI/CD Pipelines", "Jira", "Confluence", "Visual Studio Code"],
+    },
+    {
+      title: "Cloud Platforms",
+      skills: ["AWS (S3, Lambda)"],
+    },
   ];
 
   return (
@@ -35,11 +48,11 @@ const SkillsSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Skills & Expertise
+              Technical Skills
             </h2>
             <div className="w-24 h-1 bg-[hsl(var(--primary))] mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive technical skills in data analytics, business intelligence, and machine learning
+              Front-end development, REST API integration, testing, DevOps, and cloud-enabled web applications
             </p>
           </div>
 

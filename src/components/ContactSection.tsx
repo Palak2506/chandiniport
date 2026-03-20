@@ -7,14 +7,14 @@ const ContactSection = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+353 899606732",
-      href: "tel:+353899606732"
+      value: "0852797116",
+      href: "tel:0852797116"
     },
     {
       icon: Mail,
       label: "Email",
-      value: "prasadkatore181220@gmail.com",
-      href: "mailto:prasadkatore181220@gmail.com"
+      value: "krishnegowdachandini@gmail.com",
+      href: "mailto:krishnegowdachandini@gmail.com"
     },
     {
       icon: MapPin,
@@ -25,8 +25,8 @@ const ContactSection = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "Connect with me",
-      href: "https://www.linkedin.com/in/prasad-katore/"
+      value: "LinkedIn",
+      href: "https://www.linkedin.com/in/chandinikrishna/"
     }
   ];
 
@@ -36,11 +36,11 @@ const ContactSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Get In Touch
+              Contact
             </h2>
             <div className="w-24 h-1 bg-[hsl(var(--primary))] mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Ready to collaborate on data analytics projects or discuss business intelligence opportunities
+              Ready to connect for software development, React/TypeScript projects, and scalable SaaS applications
             </p>
           </div>
 

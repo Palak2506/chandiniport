@@ -4,16 +4,16 @@ import { MapPin, Phone, Mail, Linkedin, GraduationCap, Calendar, Globe, Award } 
 const AboutSection = () => {
   const quickFacts = [
     { icon: MapPin, label: "Location", value: "Dublin, Ireland" },
-    { icon: GraduationCap, label: "Education", value: "Master's in Data Analytics" },
-    { icon: Calendar, label: "Experience", value: "3+ years" },
-    { icon: Globe, label: "Specialization", value: "Data Analytics & Business Intelligence" },
+    { icon: GraduationCap, label: "Education", value: "Postgraduate Diploma in Business Analytics" },
+    { icon: Calendar, label: "Experience", value: "2+ years" },
+    { icon: Globe, label: "Specialization", value: "React, TypeScript, REST APIs, SaaS Applications" },
   ];
 
   const contactInfo = [
-    { icon: Phone, value: "+353 899606732" },
-    { icon: Mail, value: "prasadkatore181220@gmail.com" },
+    { icon: Phone, value: "0852797116" },
+    { icon: Mail, value: "krishnegowdachandini@gmail.com" },
     { icon: MapPin, value: "Dublin, Ireland" },
-    { icon: Linkedin, value: "LinkedIn", href: "https://www.linkedin.com/in/prasad-katore/" },
+    { icon: Linkedin, value: "LinkedIn", href: "https://www.linkedin.com/in/chandinikrishna/" },
   ];
 
   return (
@@ -22,7 +22,7 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              About Me
+              Professional Summary
             </h2>
             <div className="w-24 h-1 bg-[hsl(var(--primary))] mx-auto"></div>
           </div>
@@ -35,7 +35,7 @@ const AboutSection = () => {
               </h3>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Data Analyst with 3+ years of experience in building dashboards, automating data workflows, and analyzing large datasets using SQL, Python, Databricks, and Power BI. Delivered data insights and automation that contributed to a 60% uplift across multiple business performance metrics. Skilled in stakeholder collaboration, problem-solving, and delivering insights with clarity and impact.
+                Software Developer with 2+ years of experience building scalable SaaS applications and enterprise dashboards using React, TypeScript, and JavaScript. Experienced in developing high-performance UI components, REST API integrations, and cloud-enabled web applications. Worked on the Nutanix Prism DaaS platform, delivering performance-optimised solutions in Agile environments.
               </p>
 
               {/* Contact Information Grid */}

@@ -1,21 +1,28 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import projectPrimates from "@/assets/project-primates.jpg";
-import projectMolecular from "@/assets/project-molecular.jpg";
+import jAndJImg from "@/assets/j&j.png";
+import vodafoneImg from "@/assets/v.png";
+import mentalHealthImg from "@/assets/mh.jpg";
 
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Amazon Sales Dashboard on Power BI",
-      description: "Built an interactive Power BI dashboard with robust data modelling, DAX measures, and drill-through visuals to analyse sales, profit, delivery performance, and key KPIs (e.g., YoY sales, profit trends, payment modes) across regions, categories, and customer segments.",
-      image: projectPrimates,
-      technologies: ["Power BI", "DAX query", "CSV", "Data Visualization", "KPI Analysis"]
+      title: "MyConcerta - Multilingual Website Migration",
+      description: "Developed a multilingual React web application for Johnson & Johnson supporting role-based navigation and responsive UI. Integrated Google Maps API and REST APIs to build a \"Find Treatment Centre\" feature using user GPS location. Implemented lazy loading and unit testing with Jest and React Testing Library, improving performance and reliability.",
+      image: jAndJImg,
+      technologies: ["React", "JavaScript", "Jest", "React Testing Library", "Google Maps API", "REST APIs"]
     },
     {
-      title: "American Express Credit card fraud detection",
-      description: "Built a multi-model classification architecture to overcome severe data sparsity and class imbalance (0.172% fraud rate), implementing and tuning various boosting algorithms (XGBoost, CatBoost, LightGBM).",
-      image: projectMolecular,
-      technologies: ["Python", "Pandas", "Scikit-learn", "TensorFlow", "XGBoost", "CatBoost", "LightGBM"]
+      title: "Vodafone Client Services Platform",
+      description: "Built responsive sales, billing, and payment dashboards using React, TypeScript, Redux, HTML5, and Bootstrap. Implemented state management and automated unit testing, reducing production defects and improving release quality. Collaborated with backend and QA teams to deliver high-performance enterprise web applications.",
+      image: vodafoneImg,
+      technologies: ["React", "TypeScript", "Redux", "HTML5", "Bootstrap", "Unit Testing", "REST APIs"]
+    },
+    {
+      title: "Analyzing the Impact of Physical Activity on Mental Health",
+      description: "Developed machine learning models including Logistic Regression, SVM, and Random Forest to predict mental health outcomes using lifestyle and activity data. Performed data preprocessing, feature engineering, normalization, and SMOTE to handle class imbalance, achieving 93% precision and 80% recall. Identified key behavioral factors such as sleep duration, screen time, and work hours affecting mental well-being.",
+      image: mentalHealthImg,
+      technologies: ["Machine Learning", "Logistic Regression", "SVM", "Random Forest", "SMOTE", "Data Preprocessing", "Feature Engineering"]
     },
   ];
 
@@ -25,11 +32,11 @@ const ProjectsSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Featured Projects
+              Projects
             </h2>
             <div className="w-24 h-1 bg-[hsl(var(--primary))] mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Key projects showcasing expertise in data analytics, business intelligence, and machine learning
+              Projects demonstrating React development, REST API integration, and machine learning
             </p>
           </div>
 

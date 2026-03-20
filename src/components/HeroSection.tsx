@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, MapPin } from "lucide-react";
-// Profile image - Update this path when you upload Prasad Katore's profile image
-const prasadProfile = "/lovable-uploads/f858798f-d2d0-4dab-a9a1-a46c04b5abdd.png";
+import profileImage from "@/assets/chandiniprofile.jpg";
 import heroBackground from "@/assets/hero-background-modern.jpg";
 
 const HeroSection = () => {
@@ -60,18 +59,18 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="mb-8 animate-scale-in flex justify-center">
           <img
-            src={prasadProfile}
-            alt="Prasad Katore"
+            src={profileImage}
+            alt="Chandini Krishnegowda"
             className="w-56 h-56 rounded-full border-4 border-white shadow-glow object-cover object-center animate-float"
           />
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight animate-fade-in">
-          Prasad Katore
+          Chandini Krishnegowda
         </h1>
         
         <p className="text-xl md:text-2xl text-white/90 mb-4 max-w-3xl mx-auto leading-relaxed animate-slide-up">
-          Data Analyst with 3+ years of experience in building dashboards, automating data workflows, and analyzing large datasets
+          Software Developer with 2+ years of experience building scalable SaaS applications and enterprise dashboards using React, TypeScript, and JavaScript.
         </p>
         
         <div className="flex items-center justify-center space-x-2 text-white/80 mb-12 animate-slide-up" style={{animationDelay: '0.2s'}}>

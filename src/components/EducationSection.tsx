@@ -1,38 +1,82 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Calendar, Award } from "lucide-react";
+import cert1 from "@/assets/cert1-python-full-stack.png";
+import cert2 from "@/assets/cert2-public-speaking.png";
+import cert3 from "@/assets/cert3-internship.png";
+import cert4 from "@/assets/cert4-training.png";
 
 const EducationSection = () => {
   const education = [
     {
-      institution: "Dublin City University",
-      degree: "Master's Degree in Data Analytics",
-      dates: "2022 – 2023",
+      institution: "Dublin Business School",
+      degree: "Postgraduate Diploma in Business Analytics",
+      dates: "April 2024 – April 2025",
       grade: "",
-      coursework: []
+      coursework: [
+        "Data Analysis & Visualization",
+        "Predictive Analytics & Machine Learning",
+        "Business Intelligence",
+        "Applied Research Methods",
+        "Programming for Data Analytics (Python)",
+      ],
     },
     {
-      institution: "Pune University",
-      degree: "BE in Computer Science Engineering", 
-      dates: "2015 – 2020",
+      institution: "Coorg Institute of Technology",
+      degree: "Bachelor of Engineering (Computer Science)",
+      dates: "Aug 2017 – Aug 2021",
       grade: "",
-      coursework: []
+      coursework: [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming",
+        "DBMS",
+        "Web Technologies",
+        "Software Engineering",
+        "Cloud Computing",
+        "Artificial Intelligence",
+      ],
     }
   ];
 
-  const certifications = [
+  const certifications: Array<{
+    title: string;
+    issuer: string;
+    date: string;
+    description?: string;
+    image: string;
+  }> = [
     {
-      title: "PL-300: Microsoft Power BI Data Analyst",
-      issuer: "Microsoft",
-      date: "",
-      description: "Power BI, DAX query, RLS, Data cleaning. Microsoft PL-300 certified, demonstrating proficiency in data preparation, data modeling, DAX, data analysis, report building, visualization best practices, performance optimization, and managing/deploying Power BI solutions."
+      title: "Python Full Stack Course (Certificate of Completion)",
+      issuer: "Pentagon Space",
+      date: "2021-2022",
+      description:
+        "Successfully completed Python Full Stack Course from Batch No: PS27MAY21PFS#0005 for the year 2021-22.",
+      image: cert1,
     },
     {
-      title: "DP-100: Microsoft Azure Data Scientist Associate",
-      issuer: "Microsoft",
+      title: "Public Speaking Foundations (Certificate of Completion)",
+      issuer: "LinkedIn Learning",
+      date: "Jan 05, 2022",
+      description:
+        "Course completed on Jan 05, 2022 at 05:50PM UTC.",
+      image: cert2,
+    },
+    {
+      title: "Machine Learning & Artificial Intelligence (Certificate of Internship)",
+      issuer: "Inventeron Technologies and Business Solutions LLP",
       date: "",
-      description: "LLM, RAG, Azure. Microsoft DP-100 certified, skilled in data prep, feature engineering, ML model development, Azure ML pipelines and deployment, plus experience with LLM applications and RAG systems."
-    }
+      description:
+        "Completed internship in Machine Learning & Artificial Intelligence.",
+      image: cert3,
+    },
+    {
+      title: "Machine Learning (Certificate of Training)",
+      issuer: "Internshala Trainings",
+      date: "Jun 18, 2020 - Jul 30, 2020",
+      description:
+        "Successfully completed six weeks online training on Machine Learning (from 18th June, 2020 to 30th July, 2020).",
+      image: cert4,
+    },
   ];
 
   return (
@@ -41,11 +85,11 @@ const EducationSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Education & Certifications
+              Education
             </h2>
             <div className="w-24 h-1 bg-[hsl(var(--primary))] mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Academic background and professional certifications in data analytics and business intelligence
+              Academic background and coursework in business analytics and computer science
             </p>
           </div>
 
@@ -94,7 +138,6 @@ const EducationSection = () => {
             </div>
           </div>
 
-          {/* Certifications Section */}
           <div className="mt-16">
             <h3 className="text-2xl font-bold text-foreground mb-8 flex items-center">
               <Award className="w-6 h-6 mr-3 text-[hsl(var(--primary))]" />
@@ -105,6 +148,11 @@ const EducationSection = () => {
               {certifications.map((cert, index) => (
                 <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-l-[hsl(var(--primary))]">
                   <CardHeader className="pb-4">
+                    <img
+                      src={cert.image}
+                      alt={cert.title}
+                      className="w-full h-40 object-contain mb-3 rounded-md"
+                    />
                     <CardTitle className="text-lg font-bold text-foreground mb-2">
                       {cert.title}
                     </CardTitle>
